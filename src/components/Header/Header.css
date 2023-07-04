@@ -1,0 +1,80 @@
+header {
+  min-height: 100vh;
+  background-image: url("../../assets/photo5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header .wrapper {
+  position: relative;
+  height: 100vh;
+}
+
+header .cta {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 28.3125rem;
+  border-radius: 20px 20px 0px 0px;
+  border-top: 4px solid #fff;
+  border-right: 4px solid #fff;
+  border-left: 4px solid #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px 40px;
+}
+
+header .cta .course-name {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+  position: relative;
+}
+
+header .cta .course-name::after {
+  content: "";
+  position: absolute;
+  width: 3.75rem;
+  height: 0.25rem;
+  background-color: var(--red-color);
+  left: 0;
+  bottom: -10px;
+}
+
+header .cta h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: Alegreya;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+header .cta .demo-btn {
+  border-radius: 10px;
+  background-color: var(--red-color);
+  color: #fff;
+  padding: 10px 32px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+/* tablet version */
+
+@media (max-width: 1040px) {
+  header .cta {
+    width: 356px;
+  }
+}
+
+/* smart phone version  */
+
+@media (max-width: 720px) {
+  header .cta {
+    width: unset;
+    right: 32px;
+    left: 32px;
+  }
+
+  header .cta h1 {
+    font-size: 32px;
+  }
+}
